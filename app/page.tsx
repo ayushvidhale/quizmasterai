@@ -19,7 +19,7 @@ export default function Home() {
             <div className="max-w-md mx-auto">
           <a href={"/start-test"}
             // onClick={() => window.location.replace("/")} // Refresh page after test creation
-            className="bg-purple-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-30"
+            className="bg-purple-600 text-white mt-8 px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-30"
           >
             Create Test
           </a>

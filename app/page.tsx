@@ -21,6 +21,8 @@ export default function Home() {
             <h1 className="text-4xl md:text-6xl font-bold mb-4">Learn Anything with AI-Generated Question</h1>
             
             <div className="max-w-md mx-auto">
+                <br/>
+                <br/>
           <a href={"/start-test"}
             // onClick={() => window.location.replace("/")} // Refresh page after test creation
             className="bg-purple-600 text-white mt-8 px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-30"

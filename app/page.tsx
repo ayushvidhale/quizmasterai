@@ -1,4 +1,6 @@
 "use client";
+import { SignInOrComposer } from "./SignInOrComposer";
+
 
 export default function Home() {
   return (
@@ -9,6 +11,8 @@ export default function Home() {
         <div className="flex">
           <h1 className="text-xl font-bold my-auto mr-2">BrainWave</h1>
         </div>
+        <SignInOrComposer />
+
        
       </div>
 

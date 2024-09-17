@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { atomOneLight } from "react-syntax-highlighter/dist/esm/styles/hljs"; // Light mode syntax highlighting
-import { SignInOrComposer } from "./../SignInOrComposer";
 
 interface Option {
   [key: string]: string;
@@ -117,7 +116,6 @@ export default function Home() {
       <div className="fixed top-0 left-0 right-0 bg-gray-900 text-white p-4 flex justify-between items-center shadow-md z-50">
   <div className="flex">
     <h1 className="text-xl font-bold my-auto mr-2">BrainWave</h1>
-    <SignInOrComposer />
     {timerRunning && (
       <div className={`ml-4 text-xl font-bold ${timeColor}`}>
         Time Remaining: {formatTime(timer)}

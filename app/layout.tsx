@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const runtime = "edge";
 
 export const metadata: Metadata = {
-  title: "BrainWave",
+  title: "Quiz Master AI",
   description: "Where Minds Meet and Ideas Flow",
 };
 

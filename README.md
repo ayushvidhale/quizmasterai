@@ -1,36 +1,83 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI Job Preparation Platform
+
+This is a Next.js 14 project designed to help job seekers prepare for interviews through AI-powered question generation. The platform generates personalized quizzes based on user input, helping candidates to practice for the roles they’re targeting.
+
+## Features
+
+- AI-powered question generation
+- Personalized quizzes based on user skills and roles
+- Trusted by professionals at top companies
+- Integration with OpenAI and Clerk for secure authentication
+- Seamless user experience with cutting-edge Next.js 14 features
+
+## Tech Stack
+
+- **Framework**: Next.js 14
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **Authentication**: Clerk
+- **API**: OpenAI
+- **Deployment**: Vercel
 
 ## Getting Started
 
-First, run the development server:
+To run this project locally, follow these steps:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js v18+ installed
+- npm or yarn installed
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1. Clone the repository:
 
-## Learn More
+   ```bash
+   git clone https://github.com/your-username/ai-job-prep-platform.git
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. Navigate into the project directory:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+   ```bash
+   cd ai-job-prep-platform
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. Install the dependencies:
 
-## Deploy on Vercel
+   ```bash
+   npm install
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Create a `.env.local` file in the root directory and add the following environment variables:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   OPENAI_API_KEY=
+   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+   CLERK_SECRET_KEY=
+   NEXT_PUBLIC_CONVEX_URL=
+   ```
+
+### Running the Application
+
+Once the environment variables are set up, start the development server:
+
+    ```bash
+    npm run dev
+    ```
+
+### Environment Variables
+
+The following environment variables are required for the project:
+
+OPENAI_API_KEY: Your OpenAI API key for generating AI-powered questions.
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY: The publishable key from Clerk for handling authentication.
+CLERK_SECRET_KEY: The secret key from Clerk.
+NEXT_PUBLIC_CONVEX_URL: Convex cloud URL used in the project.
+
+### Contributing
+
+Feel free to submit issues or pull requests if you'd like to contribute to the project.
+
+### License
+
+This project is licensed under the MIT License. See the LICENSE file for details.
